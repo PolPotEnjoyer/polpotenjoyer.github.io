@@ -4,3 +4,6 @@
 .container{
     align-self: center;
 }
+ul{
+    list-style: none;
+}
