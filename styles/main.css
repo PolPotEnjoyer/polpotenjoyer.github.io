@@ -8,5 +8,6 @@
 }
 
 .container{
+    border: 5px solid black;
     align-self: center;
 }
