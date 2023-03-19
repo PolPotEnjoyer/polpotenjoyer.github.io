@@ -1,11 +1,12 @@
 .nav{
     border: 5px solid black;
 }
-.container{
-    align-self: center;
-}
-ul>li{
+.nav ul>li{
     list-style-type: none;
     display: inline-block;
     padding: 10px;
+}
+
+.container{
+    align-self: center;
 }
