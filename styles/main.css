@@ -7,9 +7,8 @@
     padding: 10px;
 }
 
-.container{
-    border: 5px solid black;
+.outerContainer{
+    align-self: center;
     padding-left: 5%;
     padding-right: 5%;
-    align-self: center;
 }
