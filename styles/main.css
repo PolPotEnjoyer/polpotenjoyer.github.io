@@ -9,5 +9,7 @@
 
 .container{
     border: 5px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
     align-self: center;
 }
