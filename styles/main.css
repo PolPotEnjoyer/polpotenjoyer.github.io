@@ -4,6 +4,6 @@
 .container{
     align-self: center;
 }
-ul>li{
+.nav>ul>li{
     display: inline-block;
 }
