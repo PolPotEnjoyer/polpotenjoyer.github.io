@@ -67,6 +67,17 @@ html{
     width: 70%;
 } 
 
+.floatLeft>h1,h2,h3,h4,h5,h6 {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.floatLeft>p {
+    display: block;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
 .wholeWidthText{
     float: left;
     border: 5px solid green;
@@ -74,6 +85,17 @@ html{
     float: left;
     width: 100%;
 } 
+
+.wholeWidthText>h1,h2,h3,h4,h5,h6 {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.wholeWidthText>p {
+    display: block;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
 .floatRight{
     float: right;
