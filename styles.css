@@ -52,15 +52,11 @@ html{
     display: block;
 }
 
-header{
+.section{
     border: 5px solid black;
     display: flex;
     flex-direction: row;
     overflow:auto;
-}
-
-header>text{
-    float: left;
 }
 
 .floatLeft{
@@ -69,6 +65,14 @@ header>text{
     clear: left;
     float: left;
     width: 70%;
+} 
+
+.wholeWidthText{
+    float: left;
+    border: 5px solid green;
+    clear: left;
+    float: left;
+    width: 100%;
 } 
 
 .floatRight{
