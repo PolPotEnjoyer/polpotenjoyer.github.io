@@ -107,6 +107,12 @@ html{
     display: flex;
 }
 
+.floatRight>table {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .floatRight>table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
