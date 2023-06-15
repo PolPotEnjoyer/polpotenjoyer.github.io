@@ -1,5 +1,5 @@
 html{
-    background-color: lightgray;
+    background-color: #072041;
 }
 
 .navbar {
@@ -53,7 +53,6 @@ html{
 }
 
 .section{
-    border: 5px solid black;
     display: flex;
     flex-direction: row;
     overflow:auto;
@@ -61,7 +60,6 @@ html{
 
 .floatLeft{
     float: left;
-    border: 5px solid red;
     clear: left;
     float: left;
     width: 70%;
@@ -75,12 +73,11 @@ html{
 .floatLeft>p {
     display: block;
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 3%;
 }
 
 .wholeWidthText{
     float: left;
-    border: 5px solid green;
     clear: left;
     float: left;
     width: 100%;
@@ -99,7 +96,6 @@ html{
 
 .floatRight{
     float: right;
-    border: 5px solid blue;
     background-color: white;
     text-align: center;
     width: 30%;
@@ -136,5 +132,5 @@ img{
     padding-left: 7%;
     padding-right: 7%;
     height: 100%;
-    background-color: lightgray;
+    background-color: transparent;
 }
