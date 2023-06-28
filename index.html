@@ -10,7 +10,7 @@
           xhr.open('GET', 'navbar.html', true);
           xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-              var navbarElement = document.getElementById('navbar-container');
+              var navbarElement = document.getElementById('navbar');
               navbarElement.innerHTML = xhr.responseText;
             }
           };
