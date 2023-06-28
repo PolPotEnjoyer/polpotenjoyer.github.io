@@ -4,39 +4,23 @@
     <title>Fifteenth Heaven - Crater Wiki</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadNavbar() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'navbar.html', true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var navbarElement = document.getElementById('navbar');
+              navbarElement.innerHTML = xhr.responseText;
+            }
+          };
+          xhr.send();
+        }
+      </script>
 </head>
 
-<body>
-<div class="navbar">
-    <a href="index.html">Main Page</a>
-    <div class="dropdown">Characters
-        <div class="dropdown-content">
-            <a href="character-quantrill.html">Quantrill Laggard</a>
-            <a href="character-deliverance.html">Deliverance the Peacemaker</a>
-            <a href="">Placeholder</a>
-            <a href="">Placeholder</a>
-        </div>
-    </div>
-    <div class="dropdown">Geography
-        <div class="dropdown-content">
-            <a href="geography-world.html">World Layout</a>
-            <a href="geography-plain.html">Quantrill's Plain Overview</a>
-            <a href="geography-quantrill-city.html">Quantrill City</a>
-            <a href="geography-rondesvous.html">Rondezvous</a>
-            <a href="geography-zapels-town.html">Zapel's Town</a>
-            <a href="geography-hameghavat-crater.html">Hameghavat Crater</a>
-        </div>
-    </div>
-    <div class="dropdown">Factions
-        <div class="dropdown-content">
-            <a href="faction-quantrill-company.html">Quantrill-Calumet Mining Company</a>
-            <a href="faction-plain-children.html">The Children of the Plain</a>
-            <a href="faction-peacemakers.html">The Peacemakers</a>
-            <a href="faction-fifteenth-heaven.html">Cult of the Fifteenth Heaven</a>
-            <a href="faction-hameghavat-republic.html">The Hameghavat Republic</a>
-        </div>
-    </div>
-</div>
+<body onload="loadNavbar()">
+<div id="navbar"></div>
 
 <div class="outerContainer">
     <div class="pageContainer">
