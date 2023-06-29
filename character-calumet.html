@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calumet Calvert - Crater Wiki</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadNavbar() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'navbar.html', true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var navbarElement = document.getElementById('navbar');
+              navbarElement.innerHTML = xhr.responseText;
+            }
+          };
+          xhr.send();
+        }
+      </script>
+</head>
+
+<body onload="loadNavbar()">
+<div id="navbar"></div>
+
+<div class="outerContainer">
+    <div class="pageContainer">
+        <div class="section">
+            <div class="floatLeft">
+                <h1>Calumet Calvert</h1>
+                <p>
+                    <b>Baltus Calumet Calvert</b> was a human explorer and prospector who was a co-founder of the <a href="faction-quantrill-company.html">Quantrill-Calumet Mining Company</a>,
+                    serving in a variety of mostly public-facing roles until his death 22 years ago.  
+                </p>
+            </div>
+            <div class="floatRight">
+                <table>
+                    <tr>
+                        <td colspan="2" style="border: none;"><img src=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border: none;">Calumet in middle age</td>
+                    </tr>
+                    <tr>
+                        <td>Species</td>
+                        <td>Human</td>
+                    </tr>
+                    <tr>
+                        <td>Born</td>
+                        <td>76 Years ago</td>
+                    </tr>
+                    <tr>
+                        <td>Died</td>
+                        <td>22 Years ago (aged 54)</td>
+                    </tr>
+                    <tr>
+                        <td>Occupations</td>
+                        <td>Explorer and Prospector</td>
+                    </tr>
+                    <tr>
+                        <td>Known For</td>
+                        <td>Co-Founder of the <a href="faction-quantrill-company.html">Quantrill-Calumet Mining Company</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <div class="wholeWidthText">
+                <h2>Background</h2>
+                <h2>Career</h2>
+                <h2>Personal Life, Relationships and Character</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
