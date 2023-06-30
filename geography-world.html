@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QC Mining Company - Crater Wiki</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function loadNavbar() {
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', 'navbar.html', true);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+              var navbarElement = document.getElementById('navbar');
+              navbarElement.innerHTML = xhr.responseText;
+            }
+          };
+          xhr.send();
+        }
+      </script>
+</head>
+
+<body onload="loadNavbar()">
+<div id="navbar"></div>
+
+<div class="outerContainer">
+    <div class="pageContainer">
+        <div class="section">
+            <div class="floatLeft">
+                <h1>World Overview</h1>
+                <p>
+                </p>
+            </div>
+            <div class="floatRight">
+                <table>
+                    <tr>
+                        <td colspan="2" style="border: none;">*Image*</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section">
+            <div class="wholeWidthText">
+                <h2>Scale and Celestial Position</h2>
+                <h2>Craters and Uplands</h2>
+                <h2>History and Cultures</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
